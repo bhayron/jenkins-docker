@@ -6,7 +6,7 @@ RUN mkdir -p /tmp/download && \
     rm -rf /tmp/download/docker/dockerd && \
     mv /tmp/download/docker/docker* /usr/local/bin/ && \
     rm -rf /tmp/download && \
-    groupadd -g 1 docker && \
+    groupadd -g 1 daemon && \
     usermod -aG staff,docker, daemon jenkins
 
 USER jenkins
